@@ -13,6 +13,21 @@
         "currentPosition" : "현재 포지션",
         "unrealizedProfit" : "미실현 손익"
     },
+    "dashboardPrev" : {
+        "referralSystem": "레퍼럴 페이백 시스템",
+        "mainGuide": "신청 후 거래할 때 마다 수수료를 페이백 받으세요.",
+        "chooseExc": "원하는 거래소를 선택하세요"
+    },
+    "connectExc": {
+        "paybackConnect": "레퍼럴 페이백 신청",
+        "nowSign": "지금 가입하기",
+        "UIDGuide": "※ 반드시 사이트에 있는 레퍼럴 코드로 가입한 후 UID 입력해주시기 바랍니다 ※",
+        "UIDInput": "거래소 본인 UID :",
+        "connectBtn": "신청하기",
+        "PCConnectGuide": "신규회원 &기존회원 가입방법(PC)",
+        "MobileConnectGuide": "신규회원 &기존회원 가입방법(Mobile)",
+        "UIDCheckGuide": "UID 확인방법"
+    },
     "profit" : {
         "totalPNL" : "총 PNL",
         "cumulativeProfit" : "누적 수익율",
@@ -70,11 +85,17 @@
     },
     "modal" : {
         "dateWarnig" : "날짜를 정확하게 입력해주세요.",
-        "msgCode0" : "올바르지 않은 UID 입니다.",
+        "msgCode0" : "유효하지 않은 UID 입니다.",
         "msgCode01" : "승인 대기 중입니다.",
         "msgCode02" : "성공적으로 등록되었습니다.",
-        "msgCode03" : "올바른 레퍼럴코드로 가입되지 않은 UID 입니다. 탈퇴 후 올바른 레퍼럴 코드로 재 가입 해주시기 바랍니다.",
-        "msgCode04" : "이미 등록된 UID 입니다.",
+        "msgCode03" : "유효하지 않은 UID 입니다. 탈퇴 후 올바른 레퍼럴 코드로 재 가입 해주시기 바랍니다.",
+        "msgCode04" : "이미 신청 완료된 UID 입니다.",
+        "msgCode05" : "이미 등록된 UID입니다.",
+        "msgCode06" : "등록 신청이 완료 되었습니다.",
+        "msgCode07" : "등록 신청에 실패하였습니다. 잠시 후 다시 시도해주세요.",
+        "msgCode08" : "해당 거래소는 레퍼럴 신청 후 최대 2영업일 이내 레퍼럴 등록 완료됩니다.",
+        "msgCode09" : "레퍼럴 등록 승인 대기중입니다.",
+        "msgCode10" : "해당 UID로 신청된 레퍼럴 내역이 존재하지 않습니다.",
         "noLogin" : "중복 로그인이 확인되었습니다. 창을 종료합니다."
     }
 }
