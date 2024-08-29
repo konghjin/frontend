@@ -1,78 +1,44 @@
 {
-    "dashboard" : {
-        "daysOperation" : "Days of Operation",
-        "currentBalance" : "Current Balance",
-        "avDailyProfit" : "Average Daily Profit",
-        "avWeeklyProfit" : "Average Weekly Profit",
-        "monthProfit" : "This Month's Profit",
-        "startingAmount" : "Starting Amount",
-        "currentDeposit" : "Current Deposit",
-        "currentProfit" : "Current Profit",
-        "estimatedDeduction" : "Estimated Deduction",
-        "estimatedAdditionalCharge" : "Estimated Additional Charge",
-        "currentPosition" : "Current Position",
-        "unrealizedProfit" : "Unrealized Profit"
+    "dashboardPrev" : {
+        "referralSystem": "Referral Payback System",
+        "mainGuide": "Apply Now and Receive payback on fees every time you trade",
+        "chooseExc": "Choose your preferred exchange"
     },
-    "profit" : {
-        "totalPNL" : "Total PNL",
-        "cumulativeProfit" : "Cumulative Profit",
-        "avMonthlyProfit" : "Average Monthly Profit",
-        "avWeeklyProfit" : "Average Weekly Profit",
-        "avDailyProfit" : "Average Daily Profit",
-        "transactionHistory" : "Transaction History",
-        "currency" : "Currency",
-        "previousPrice" : "Previous Price",
-        "currentPrice" : "Current Price",
-        "date" : "Date"
-    },
-    "deposit" : {
-        "requiredAmount" : "Required Amount",
-        "currentAmount" : "Current Amount",
-        "insufficientAmount" : "Insufficient Amount",
-        "date" : "Date"
-    },
-    "common" : {
-        "dashboardTitle" : "Dashboard",
-        "position" : "Position",
-        "profitTitle" : "Profit",
-        "term" : "Term",
-        "type" : "Type",
-        "coin" : "Coin",
-        "quantity" : "Quantity",
-        "change" : "Change",
-        "balance" : "Balance",
-        "apply" : "Apply",
-        "confirm" : "Confirm",
-        "cancel" : "Cancel", 
-        "dateWarningMsg" : "Please enter the date accurately."
-    },
-    "info" : {
-        "infoTxt01" : "based on over 7 years of big data and deep learning system",
-        "infoTxt02" : "More than 20,000 people in 27 countries are using it",
-        "infoTxt03" : "FX automatic trading bot!",
-        "infoTxt04" : "based on GOYA AI algorithm!",
-        "infoTxt05" : "In foreign exchange trading, linking with Goya FX Bot Achieve higher returns of over ",
-        "infoTxt06" : "every year with automatic trading!"
-    },
-    "guide" : {
-        "step01" : "Open an FP Markets Account",
-        "step02" : "Charge Seed Money for Operation",
-        "step03" : "Charge Deposit",
-        "step04" : "Link your Transactions",
-        "stepGuide01" : "Account Guide",
-        "stepGuide02" : "Seed Money Charging Guide",
-        "stepGuide03" : "Deposit Charging Guide",
-        "stepGuide04" : "Transaction Linking Guide",
-        "singUp" : "Sign Up",
-        "charge" : "Charge",
-        "operate" : "Operate FX Bot",
-        "videoGuide" : "Video Guide"
+    "connectExc": {
+        "paybackConnect": "Apply for Referral Payback",
+        "nowSign": "Sign up now",
+        "notLinkPayback" : "(Payback will not be processed if you sign up using other links or codes.)",
+        "UIDGuide": "※ Please make sure to sign up using the REFERRAL CODE on the site and enter your UID ※",
+        "UIDInput": " Exchange UID:",
+        "connectBtn": "Apply",
+        "PCConnectGuide": "New & Existing Users Registration Method (PC)",
+        "MobileConnectGuide": "New & Existing Users Registration Method (Mobile)",
+        "UIDCheckGuide": "How to Check UID"
     },
     "modal" : {
-        "dateWarnig" : "<p>Please check the date carefully.</p>",
-        "msgCode01" : "<p>Successfully registered.</p>",
-        "msgCode02" : "<p>The UID is already registered.</p>",
-        "msgCode03" : "<p>The UID is invalid.</p>",
-        "msgCode04" : "<p>The UID is not registered with a valid referral code. <br/> Please re-register with a valid referral code after deactivating your account.</p>"
+        "dateWarnig" : "날짜를 정확하게 입력해주세요.",
+        "msgCode0" : "This UID is invalid.",
+        "msgCode01" : "The registration application has been completed.",
+        "msgCode02" : "성공적으로 등록되었습니다.",
+        "msgCode03" : "Registration application failed. Please try again later.",
+        "msgCode04" : "This UID is already registered.",
+        "msgCode05" : "For this exchange, Referral registration will be completed within 2 business days after application.",
+        "msgCode06" : "This UID has already been applied.",
+        "msgCode07" : "No referral application history exist for this UID.",
+        "noLogin" : "중복 로그인이 확인되었습니다. 창을 종료합니다."
+    },
+    "modalExchange" : {
+        "okx" : "기존회원의 경우 1회에 한해 회원탈뢰를 하실경우 KYC 인증을 다시 받으실 수 있습니다. 한번도 탈퇴한 기록이 없는 기존회원께서는 탈퇴를 진행하고 레퍼럴코드를 입력하여 신규가입한 계정의 UID를 입력하시면 됩니다.",
+        "bingx" : "기존 회원의 경우 레퍼럴 코드를 입력한 신규 계정을 생성하여 UID를 먼저 입력하시고 이후 기존계정에서 KYC를 신규계정으로 옮기실 권장 드립니다 (KYC 이동시 약 7일 소요예상)",
+        "deepcoin" : "기존회원의 경우 1회에 한해 회원탈뢰를 하실경우 KYC 인증을 다시 받으실 수 있습니다. 한번도 탈퇴한 기록이 없는 기존회원께서는 탈퇴를 진행하고 레퍼럴코드를 입력하여 신규가입한 계정의 UID를 입력하시면 됩니다.",
+        "toobit" : "기존회원의 경우UID를 확인하여 Telegram : https://t.me/retrics 로 보내주시면 레퍼럴 코드를 변경처리 해 드리겠습니다."
+    },
+    "noAccess" : {
+        "msg01" : "불편을 드려 죄송합니다.",
+        "msg02" : "비정상적인 경로로 접근 하였습니다.",
+        "msg03" : "확인을 누르시면 RETRI 페이지로 이동합니다."
+    },
+    "common" : {
+        "confirm" : "confirm"
     }
 }

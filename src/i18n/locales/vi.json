@@ -1,78 +1,44 @@
 {
-    "dashboard" : {
-        "daysOperation" : "Days of Operation",
-        "currentBalance" : "Current Balance",
-        "avDailyProfit" : "Average Daily Profit",
-        "avWeeklyProfit" : "Average Weekly Profit",
-        "monthProfit" : "This Month's Profit",
-        "startingAmount" : "Starting Amount",
-        "currentDeposit" : "Current Deposit",
-        "currentProfit" : "Current Profit",
-        "estimatedDeduction" : "Estimated Deduction",
-        "estimatedAdditionalCharge" : "Estimated Additional Charge",
-        "currentPosition" : "Current Position",
-        "unrealizedProfit" : "Unrealized Profit"
+    "dashboardPrev" : {
+        "referralSystem": "Chế độ hoàn tiền thông qua link giới thiệu(Referral)",
+        "mainGuide": "Sau khi đăng ký,sẽ nhận lại được tiền hoàn lại phí cho mỗi giao dịch.",
+        "chooseExc": "Chọn sàn giao dịch mà bạn mong muốn"
     },
-    "profit" : {
-        "totalPNL" : "Total PNL",
-        "cumulativeProfit" : "Cumulative Profit",
-        "avMonthlyProfit" : "Average Monthly Profit",
-        "avWeeklyProfit" : "Average Weekly Profit",
-        "avDailyProfit" : "Average Daily Profit",
-        "transactionHistory" : "Transaction History",
-        "currency" : "Currency",
-        "previousPrice" : "Previous Price",
-        "currentPrice" : "Current Price",
-        "date" : "Date"
-    },
-    "deposit" : {
-        "requiredAmount" : "Required Amount",
-        "currentAmount" : "Current Amount",
-        "insufficientAmount" : "Insufficient Amount",
-        "date" : "Date"
-    },
-    "common" : {
-        "dashboardTitle" : "Dashboard",
-        "position" : "Position",
-        "profitTitle" : "Profit",
-        "term" : "Term",
-        "type" : "Type",
-        "coin" : "Coin",
-        "quantity" : "Quantity",
-        "change" : "Change",
-        "balance" : "Balance",
-        "apply" : "Apply",
-        "confirm" : "Confirm",
-        "cancel" : "Cancel", 
-        "dateWarningMsg" : "Please enter the date accurately."
-    },
-    "info" : {
-        "infoTxt01" : "based on over 7 years of big data and deep learning system",
-        "infoTxt02" : "More than 20,000 people in 27 countries are using it",
-        "infoTxt03" : "FX automatic trading bot!",
-        "infoTxt04" : "based on GOYA AI algorithm!",
-        "infoTxt05" : "In foreign exchange trading, linking with Goya FX Bot Achieve higher returns of over ",
-        "infoTxt06" : "every year with automatic trading!"
-    },
-    "guide" : {
-        "step01" : "Open an FP Markets Account",
-        "step02" : "Charge Seed Money for Operation",
-        "step03" : "Charge Deposit",
-        "step04" : "Link your Transactions",
-        "stepGuide01" : "Account Guide",
-        "stepGuide02" : "Seed Money Charging Guide",
-        "stepGuide03" : "Deposit Charging Guide",
-        "stepGuide04" : "Transaction Linking Guide",
-        "singUp" : "Sign Up",
-        "charge" : "Charge",
-        "operate" : "Operate FX Bot",
-        "videoGuide" : "Video Guide"
+    "connectExc": {
+        "paybackConnect": "Đăng ký hoàn tiền thông qua link giới thiệu(Referral)",
+        "nowSign": "Đăng ký ngay",
+        "UIDGuide": "※ Hãy nhớ đăng ký bằng mã giới thiệu trên trang web và sau đó nhập UID của bạn ※",
+        "notLinkPayback" : "(Nếu bạn đăng ký bằng mã giới thiệu hoặc liên kết khác, việc hoàn tiền sẽ không được thực hiện.)",
+        "UIDInput": "UID của bạn trên sàn ",
+        "connectBtn": "Đăng ký",
+        "PCConnectGuide": "Cách đăng ký dành cho thành viên mới và thành viên hiện tại (Máy tính)",
+        "MobileConnectGuide": "Cách đăng ký dành cho thành viên mới và thành viên hiện tại (Điện thoại)",
+        "UIDCheckGuide": "Cách xác nhận UID"
     },
     "modal" : {
-        "dateWarnig" : "<p>Please check the date carefully.</p>",
-        "msgCode01" : "<p>Successfully registered.</p>",
-        "msgCode02" : "<p>The UID is already registered.</p>",
-        "msgCode03" : "<p>The UID is invalid.</p>",
-        "msgCode04" : "<p>The UID is not registered with a valid referral code. <br/> Please re-register with a valid referral code after deactivating your account.</p>"
+        "dateWarnig" : "Hãy nhập chính xác ngày",
+        "msgCode0" : "UID không hợp lệ.",
+        "msgCode01" : "Đơn đăng ký của bạn đã hoàn tất.",
+        "msgCode02" : "Bạn đã đăng ký thành công",
+        "msgCode03" : "Đơn đăng ký của bạn không thành công. Vui lòng thử lại sau ít phút nữa.",
+        "msgCode04" : "UID này đã được đăng nhập.",
+        "msgCode05" : "Tối đa 2 ngày( Trừ ngày nghỉ, ngày lễ) việc đăng ký của bạn sẽ được hoàn tất trên sàn giao dịch. ",
+        "msgCode06" : "Đây là UID đã được đăng ký",
+        "msgCode07" : "UID này không tồn tại hoặc chưa được đăng ký thông qua mã giới thiệu",
+        "noLogin" : " Đã phát hiện đăng nhập trùng lặp. Cửa sổ sẽ bị đóng lại."
+    },
+    "modalExchange" : {
+        "okx" : "Nếu bạn là thành viên hiện tại, bạn có thể nhận lại xác minh KYC nếu bạn hủy tư cách thành viên của mình chỉ một lần. Các thành viên hiện tại chưa có hồ sơ rút tiền có thể tiến hành rút tiền và nhập mã giới thiệu và UID của tài khoản mới đăng ký.",
+        "bingx" : "Đối với các thành viên hiện tại, chúng tôi khuyên bạn nên tạo tài khoản mới có mã giới thiệu, nhập UID trước rồi chuyển KYC từ tài khoản hiện tại sang tài khoản mới (dự kiến ​​mất khoảng 7 ngày để chuyển KYC)",
+        "deepcoin" : "Các thành viên hiện tại có thể nhận lại xác minh KYC nếu họ chỉ hủy tư cách thành viên một lần. Các thành viên hiện tại chưa có hồ sơ rút tiền có thể tiến hành rút tiền và nhập mã giới thiệu và UID của tài khoản mới đăng ký.",
+        "toobit" : "Nếu bạn hiện là thành viên của Toobit, vui lòng kiểm tra UID của bạn và gửi tới Telegram: https://t.me/retrics , chúng tôi sẽ thay đổi mã giới thiệu."
+    },
+    "noAccess" : {
+        "msg01" : "Chúng tôi xin lỗi vì sự bất tiện này.",
+        "msg02" : "Truy cập được thực hiện thông qua một con đường bất thường.",
+        "msg03" : "Nhấn xác nhận và di chuyển đến trang Retri."
+    },
+    "common" : {
+        "confirm" : "kiểm tra"
     }
 }
