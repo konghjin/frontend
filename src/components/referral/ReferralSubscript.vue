@@ -9,16 +9,18 @@
         />
         <!-- <img class="logo_l" :src="exchange.text" :alt="exchange.name" /> -->
       </div>
-      <p>{{$t('connectExc.paybackConnect')}}</p>
-      <button class="gradient_green">{{$t('connectExc.nowSign')}}</button>
+      <p>{{ $t("connectExc.paybackConnect") }}</p>
+      <button class="gradient_green">{{ $t("connectExc.nowSign") }}</button>
     </div>
     <p class="warning_txt">
-      {{$t('connectExc.UIDGuide')}}
+      {{ $t("connectExc.UIDGuide") }}
       <br />
       {{$t('connectExc.notLinkPayback')}}
     </p>
     <div class="uid_area flex_row_c_c">
-      <label for="userUid">{{ exchange.name }} {{$t('connectExc.UIDInput')}}: </label>
+      <label for="userUid"
+        >{{ exchange.name }} {{ $t("connectExc.UIDInput") }}
+      </label>
       <input
         type="number"
         id="userUid"
@@ -28,22 +30,33 @@
       />
     </div>
     <div class="btn_area flex_row_c_c">
-      <button class="gradient_blue" @click="enrollBtn">{{$t('connectExc.connectBtn')}}</button>
+      <button class="gradient_blue" @click="enrollBtn">
+        {{ $t("connectExc.connectBtn") }}
+      </button>
     </div>
     <div>
       <ul class="flex_row_c_c">
         <li class="flex_row_c_c">
-          <p>{{ exchange.name }} {{$t('connectExc.PCConnectGuide')}}</p>
+          <p>{{ exchange.name }} {{ $t("connectExc.PCConnectGuide") }}</p>
           <button>
-            <img src="@/assets/image/download_icon.png" alt="download" />
+            <a
+              :href="`/pdf/${exchange.name}/${screenSize}/${exchange.name}_${screenSize}_${localLang}.pdf`"
+              download=""
+            >
+              <img src="@/assets/image/download_icon.png" alt="download"
+            /></a>
           </button>
           <button>
             <img src="@/assets/image/youtube_icon.png" alt="youtube" />
           </button>
         </li>
         <li class="flex_row_c_c">
-          <p>{{ exchange.name }} {{$t('connectExc.UIDCheckGuide')}}</p>
-          <a href="/pdf/toobit/mo/toobit_mo_CN.pdf" download="toobit.pdf"><img src="@/assets/image/download_icon.png" alt="download" /></a>
+          <p>{{ exchange.name }} {{ $t("connectExc.UIDCheckGuide") }}</p>
+          <a
+            :href="`/uid/${exchange.name}/${screenSize}/${exchange.name}_${screenSize}_${localLang}.pdf`"
+            download=""
+            ><img src="@/assets/image/download_icon.png" alt="download"
+          /></a>
           <button>
             <img src="@/assets/image/youtube_icon.png" alt="youtube" />
           </button>
@@ -55,11 +68,10 @@
 </template>
 
 <script setup>
-import { computed } from "vue";
+import { computed, ref } from "vue";
 import ModalMsg from "@/components/modal/ModalMsg.vue";
 import { useStore } from "vuex";
 import { useRouter } from "vue-router";
-// import axios from "axios";
 const router = useRouter();
 const store = useStore();
 const exchange = computed(() => {
@@ -70,6 +82,9 @@ const modalState = computed(() => {
 });
 const uidState = computed(() => {
   return store.state.referral.uidState;
+});
+const localLang = computed(() => {
+  return store.state.referral.region_code;
 });
 // const session_id = computed(() => {
 //   return store.state.referral.session_id;
@@ -89,6 +104,8 @@ const enrollBtn = async () => {
   msgCode = `msgCode0${uidState.value}`;
   //msg code 1 = 승인대기, 2 = 승인완료, 3 =승인실패
 };
+let screenSize = ref("pc");
+
 if (Object.keys(exchange.value).length === 0) {
   router.push("/payback");
 }
@@ -97,23 +114,13 @@ const createdFn = async () => {
   // if (!session_id.value || !retri_id.value) {
   //   router.push("/404");
   // }
+  const screenWidth = window.innerWidth;
+  if (screenWidth < 729) {
+    screenSize.value = "mo";
+  } else {
+    screenSize.value = "pc";
+  }
 };
-// const downloadPDF = async () => {
-//   try {
-//     const response = await axios.get("/api/download", {
-//       responseType: "blob",
-//     });
-
-//     const url = window.URL.createObjectURL(new Blob([response.data]));
-//     const link = document.createElement("a");
-//     link.href = url;
-//     link.setAttribute("download", "file.pdf");
-//     document.body.appendChild(link);
-//     link.click();
-//   } catch (error) {
-//     console.error(error);
-//   }
-// };
 store.watch((state) => {
   if (state.referral.setting) {
     createdFn();

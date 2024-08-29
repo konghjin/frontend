@@ -32,6 +32,8 @@
   
   <script setup>
   import { ref } from "vue";
+import { useStore } from "vuex";
+  const store = useStore();
   /**
    * 언어선택탭 컴포넌트
    * @isClickLang 클릭시 드랍다운메뉴 open
@@ -72,11 +74,13 @@
     localStorage.setItem("localeLangDisplayed", selectLanguage.displayed);
     isClickLang.value = false;
     $i18n.locale = selectLanguage.abbr;
+    store.commit("referral/setLanugage",selectLanguage.displayed);
   };
   
   //created;
   if (!selectLang.value) {
     selectLang.value = localStorage.getItem("localeLangDisplayed");
   }
+  store.commit("referral/setLanugage", localStorage.getItem("localeLangDisplayed"));
   </script>
   

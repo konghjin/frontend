@@ -125,11 +125,17 @@
 .recieve_wrap ul li{
   background-color: rgba(0, 0, 0, 0.4);
   padding: 30px;
-  gap: 25px;
+  gap: 20px;
   font-size: 1.3em;
   border-radius: 15px;
+  width: 50%;
+  height: 120px;
+}
+.recieve_wrap ul li p{ 
+  width: 70%;
 }
 .recieve_wrap ul li button{
+  width: 45px;
   background-color: transparent;
 }
 .status_txt{
@@ -206,6 +212,10 @@
     gap: 10px;
     font-size: 1.2em;
   }
+  .recieve_wrap ul li{
+    padding : 10px;
+    height: auto;
+  }
   .recieve_wrap ul li p {
     width: 50%;
     min-width: 91px;
@@ -223,5 +233,8 @@
   }
   .recieve_wrap ul li img{
     width: 25px;
+  }
+  .recieve_wrap ul li button{
+    width: auto;
   }
 }
